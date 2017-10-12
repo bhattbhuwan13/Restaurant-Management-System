@@ -1,0 +1,10 @@
+Hello
+{% if itemList %}
+    <ul>
+    {% for item in itemList %}
+        <li><a href="/home/{{ item.id }}/">{{ item.itemPrice }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}
